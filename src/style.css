@@ -18,6 +18,10 @@ h1 {
   color: #272142;
 }
 
+a {
+  text-decoration: none;
+}
+
 li {
   font-weight: 500;
   margin-bottom: 5px;
@@ -72,6 +76,14 @@ small {
   position: relative;
 }
 
-li::first-letter {
+li:first-letter {
   text-transform: capitalize;
+}
+
+.weather-temperature .active {
+  color: rgba(39, 33, 66, 0.4);
+}
+
+.weather-temperature .active:hover {
+  text-decoration: none;
 }
