@@ -2,14 +2,6 @@ body {
   font-family: Cerebri-Sans, Helvetica, Arial, sans-serif;
 }
 
-.border {
-  margin: 30px auto;
-  max-width: 600px;
-  padding: 20px;
-  border: 3px solid #dadde1;
-  border-radius: 4px;
-}
-
 h1 {
   display: block;
   font-size: 2em;
@@ -38,4 +30,44 @@ li {
 ul {
   margin-left: 0;
   padding: 0;
+}
+
+bold {
+  font-size: 58px;
+  margin: 0 auto;
+  padding-top: 30px;
+  line-height: 1;
+}
+
+small {
+  position: relative;
+  font-size: 16px;
+  top: -30px;
+}
+
+.border {
+  margin: 30px auto;
+  max-width: 600px;
+  padding: 20px;
+  border: 3px solid #dadde1;
+  border-radius: 4px;
+}
+
+.wrapper {
+  max-width: 600px;
+  margin: 30px auto;
+}
+
+.top {
+  margin-bottom: 20px;
+}
+
+.weather-temperature img {
+  margin-right: 0;
+  padding-bottom: 35px;
+  line-height: 1;
+}
+
+.weather-temperature .units {
+  position: relative;
 }

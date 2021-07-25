@@ -16,35 +16,43 @@
   <body>
     <div class="container">
       <div class="border">
-        <h1>City</h1>
-        <ul>
-          <li>Date</li>
-          <li>Description</li>
-        </ul>
-        <div class="row">
-          <div class="col-6">
-            <img
-              src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
-              alt="sun"
-            />
-            degrees °C | °F
-          </div>
-          <div class="col-6">
+        <div class="wrapper">
+          <div class="top">
+            <h1>City</h1>
             <ul>
-              <li>Humidity:</li>
-              <li>Wind:</li>
+              <li>Date</li>
+              <li>Description</li>
             </ul>
           </div>
+          <div class="row">
+            <div class="col-6">
+              <div class="weather-temperature">
+                <img
+                  src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
+                  alt="sun"
+                />
+
+                <bold>10</bold>
+                <small>C°| <a href="%">F°</a></small>
+              </div>
+            </div>
+            <div class="col-6">
+              <ul>
+                <li>Humidity:</li>
+                <li>Wind:</li>
+              </ul>
+            </div>
+          </div>
         </div>
+        <small>
+          <a
+            href="https://github.com/saulevaldo/simple-weather-application"
+            target="_blank"
+            >open-source code</a
+          >
+          by Saule Sceponaviciute
+        </small>
       </div>
-      <small>
-        <a
-          href="https://github.com/saulevaldo/simple-weather-application"
-          target="_blank"
-          >open-source code</a
-        >
-        by Saule Sceponaviciute
-      </small>
     </div>
   </body>
 </html>
