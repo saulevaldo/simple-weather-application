@@ -1,0 +1,41 @@
+body {
+  font-family: Cerebri-Sans, Helvetica, Arial, sans-serif;
+}
+
+.border {
+  margin: 30px auto;
+  max-width: 600px;
+  padding: 20px;
+  border: 3px solid #dadde1;
+  border-radius: 4px;
+}
+
+h1 {
+  display: block;
+  font-size: 2em;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  margin: 20px 0 10px;
+  line-height: 29px;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 48px;
+  color: #272142;
+}
+
+li {
+  font-weight: 500;
+  margin-bottom: 5px;
+  color: rgba(39, 33, 66, 0.4);
+  font-size: 16px;
+  line-height: 20px;
+  list-style: none;
+}
+
+ul {
+  margin-left: 0;
+  padding: 0;
+}
