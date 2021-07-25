@@ -11,6 +11,7 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
@@ -18,10 +19,10 @@
       <div class="border">
         <div class="wrapper">
           <div class="top">
-            <h1>City</h1>
+            <h1 id="city"></h1>
             <ul>
-              <li>Date</li>
-              <li>Description</li>
+              <li id="date"></li>
+              <li id="description"></li>
             </ul>
           </div>
           <div class="row">
@@ -32,14 +33,14 @@
                   alt="sun"
                 />
 
-                <bold>10</bold>
+                <bold id="temperature"></bold>
                 <small>C°| <a href="%">F°</a></small>
               </div>
             </div>
             <div class="col-6">
               <ul>
-                <li>Humidity:</li>
-                <li>Wind:</li>
+                <li>Humidity: <span id="humidity"></span>%</li>
+                <li>Wind: <span id="wind"></span>km/h</li>
               </ul>
             </div>
           </div>
@@ -54,5 +55,7 @@
         </small>
       </div>
     </div>
+
+    <script src="src/app.js"></script>
   </body>
 </html>
