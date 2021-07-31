@@ -4,7 +4,6 @@ function displayDate(timestamp) {
   if (hours < 10) {
     hours = `0${hours}`;
   }
-  let day = date.getDay();
   let days = [
     "Sunday",
     "Monday",
@@ -14,11 +13,49 @@ function displayDate(timestamp) {
     "Friday",
     "Saturday",
   ];
+
+  let day = days[date.getDay()];
+
   let minutes = date.getMinutes();
   if (minutes < 10) {
     minutes = `0${minutes}`;
   }
   return `${days[day]} ${hours}:${minutes}`;
+}
+
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+
+  let forecastHTML = `<div class="row">`;
+
+  let days = ["Sat", "Sun", "Mon", "Tue", "Wed"];
+
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+    <div class="col-2">
+        <div class="forecast-date">
+               ${day}
+        </div>
+        <img src="http://openweathermap.org/img/wn/04d@2x.png" 
+        alt=""
+        width="40">
+        <div class="forecast-temps">
+            <span class="forecast-max">
+                   18°
+            </span>
+            <span class="forecast-min">
+                   12°
+            </span>
+           </div>
+       </div>
+    `;
+  });
+
+  forecastHTML = forecastHTML + `</div>`;
+
+  forecastElement.innerHTML = forecastHTML;
 }
 
 function displayTemperature(response) {
@@ -86,3 +123,4 @@ let showCelsius = document.querySelector("#celsius");
 showCelsius.addEventListener("click", changeToCelsius);
 
 search("Oslo");
+displayForecast();
