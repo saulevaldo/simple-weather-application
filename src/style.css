@@ -87,3 +87,21 @@ li:first-letter {
 .weather-temperature .active:hover {
   text-decoration: none;
 }
+
+.weather-forecast {
+  text-align: center;
+  margin-top: -20px;
+  color: #48484a;
+}
+
+.forecast-date {
+  font-size: 16px;
+}
+
+.forecast-min {
+  opacity: 0.7;
+}
+
+.forecast-temps {
+  font-size: 13px;
+}
